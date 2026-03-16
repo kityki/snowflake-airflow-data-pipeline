@@ -1,0 +1,35 @@
+[2026-03-13T08:38:15.395+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 1_load_csv_to_snowflake.load_stage_3 manual__2026-03-13T08:28:55.288191+00:00 [queued]>
+[2026-03-13T08:38:15.404+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 1_load_csv_to_snowflake.load_stage_3 manual__2026-03-13T08:28:55.288191+00:00 [queued]>
+[2026-03-13T08:38:15.404+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2026-03-13T08:38:15.417+0000] {taskinstance.py:2214} INFO - Executing <Task(SnowflakeOperator): load_stage_3> on 2026-03-13 08:28:55.288191+00:00
+[2026-03-13T08:38:15.423+0000] {standard_task_runner.py:60} INFO - Started process 9165 to run task
+[2026-03-13T08:38:15.427+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '1_load_csv_to_snowflake', 'load_stage_3', 'manual__2026-03-13T08:28:55.288191+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/1_load_csv_to_snowflake.py', '--cfg-path', '/tmp/tmpm8tk5d3s']
+[2026-03-13T08:38:15.429+0000] {standard_task_runner.py:88} INFO - Job 26: Subtask load_stage_3
+[2026-03-13T08:38:15.476+0000] {task_command.py:423} INFO - Running <TaskInstance: 1_load_csv_to_snowflake.load_stage_3 manual__2026-03-13T08:28:55.288191+00:00 [running]> on host 491a6a573ad3
+[2026-03-13T08:38:15.557+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='1_load_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='load_stage_3' AIRFLOW_CTX_EXECUTION_DATE='2026-03-13T08:28:55.288191+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-13T08:28:55.288191+00:00'
+[2026-03-13T08:38:15.559+0000] {sql.py:276} INFO - Executing: CALL AIRLINE_DWH.STAGE_3_CORE.LOAD_STAGE_3();
+[2026-03-13T08:38:15.571+0000] {base.py:83} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2026-03-13T08:38:15.581+0000] {base.py:83} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2026-03-13T08:38:15.582+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.1, Python Version: 3.8.18, Platform: Linux-6.12.68-linuxkit-x86_64-with-glibc2.34
+[2026-03-13T08:38:15.583+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-03-13T08:38:16.193+0000] {cursor.py:1032} INFO - query: [ALTER SESSION SET autocommit=False]
+[2026-03-13T08:38:16.300+0000] {cursor.py:1045} INFO - query execution done
+[2026-03-13T08:38:16.300+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2026-03-13T08:38:16.301+0000] {sql.py:457} INFO - Running statement: CALL AIRLINE_DWH.STAGE_3_CORE.LOAD_STAGE_3();, parameters: None
+[2026-03-13T08:38:16.301+0000] {cursor.py:1032} INFO - query: [CALL AIRLINE_DWH.STAGE_3_CORE.LOAD_STAGE_3();]
+[2026-03-13T08:38:18.168+0000] {cursor.py:1045} INFO - query execution done
+[2026-03-13T08:38:18.169+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2026-03-13T08:38:18.169+0000] {sql.py:466} INFO - Rows affected: 1
+[2026-03-13T08:38:18.170+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/snowflake/hooks/snowflake.py:393: AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+  result = self._make_common_data_structure(handler(cur))  # type: ignore[attr-defined]
+
+[2026-03-13T08:38:18.171+0000] {snowflake.py:402} INFO - Rows affected: 1
+[2026-03-13T08:38:18.171+0000] {snowflake.py:403} INFO - Snowflake query id: 01c2ff26-0106-4fdf-0004-af660001640e
+[2026-03-13T08:38:18.172+0000] {cursor.py:1032} INFO - query: [COMMIT]
+[2026-03-13T08:38:18.302+0000] {cursor.py:1045} INFO - query execution done
+[2026-03-13T08:38:18.303+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2026-03-13T08:38:18.304+0000] {connection.py:734} INFO - closed
+[2026-03-13T08:38:18.442+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2026-03-13T08:38:18.537+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=1_load_csv_to_snowflake, task_id=load_stage_3, execution_date=20260313T082855, start_date=20260313T083815, end_date=20260313T083818
+[2026-03-13T08:38:18.565+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-13T08:38:18.581+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

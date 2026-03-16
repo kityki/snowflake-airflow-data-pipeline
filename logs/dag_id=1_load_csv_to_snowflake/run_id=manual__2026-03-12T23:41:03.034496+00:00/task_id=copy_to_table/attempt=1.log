@@ -1,0 +1,59 @@
+[2026-03-12T23:41:14.438+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 1_load_csv_to_snowflake.copy_to_table manual__2026-03-12T23:41:03.034496+00:00 [queued]>
+[2026-03-12T23:41:14.446+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 1_load_csv_to_snowflake.copy_to_table manual__2026-03-12T23:41:03.034496+00:00 [queued]>
+[2026-03-12T23:41:14.446+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2026-03-12T23:41:14.457+0000] {taskinstance.py:2214} INFO - Executing <Task(SnowflakeOperator): copy_to_table> on 2026-03-12 23:41:03.034496+00:00
+[2026-03-12T23:41:14.462+0000] {standard_task_runner.py:60} INFO - Started process 1055 to run task
+[2026-03-12T23:41:14.466+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '1_load_csv_to_snowflake', 'copy_to_table', 'manual__2026-03-12T23:41:03.034496+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/1_load_csv_to_snowflake.py', '--cfg-path', '/tmp/tmp9lv88wny']
+[2026-03-12T23:41:14.467+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask copy_to_table
+[2026-03-12T23:41:14.515+0000] {task_command.py:423} INFO - Running <TaskInstance: 1_load_csv_to_snowflake.copy_to_table manual__2026-03-12T23:41:03.034496+00:00 [running]> on host 491a6a573ad3
+[2026-03-12T23:41:14.586+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='1_load_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='copy_to_table' AIRFLOW_CTX_EXECUTION_DATE='2026-03-12T23:41:03.034496+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-12T23:41:03.034496+00:00'
+[2026-03-12T23:41:14.588+0000] {sql.py:276} INFO - Executing: 
+        COPY INTO STAGE_1_RAW.RAW_AIRLINE_DATA
+        FROM @STAGE_1_RAW.MY_INTERNAL_STAGE
+        FILE_FORMAT = (TYPE = 'CSV' SKIP_HEADER = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '"');
+        
+[2026-03-12T23:41:14.599+0000] {base.py:83} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2026-03-12T23:41:14.608+0000] {base.py:83} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2026-03-12T23:41:14.609+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.1, Python Version: 3.8.18, Platform: Linux-6.12.68-linuxkit-x86_64-with-glibc2.34
+[2026-03-12T23:41:14.610+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-03-12T23:41:15.188+0000] {cursor.py:1032} INFO - query: [ALTER SESSION SET autocommit=False]
+[2026-03-12T23:41:15.323+0000] {cursor.py:1045} INFO - query execution done
+[2026-03-12T23:41:15.324+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2026-03-12T23:41:15.325+0000] {sql.py:457} INFO - Running statement: COPY INTO STAGE_1_RAW.RAW_AIRLINE_DATA
+        FROM @STAGE_1_RAW.MY_INTERNAL_STAGE
+        FILE_FORMAT = (TYPE = 'CSV' SKIP_HEADER = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '"');, parameters: None
+[2026-03-12T23:41:15.325+0000] {cursor.py:1032} INFO - query: [COPY INTO STAGE_1_RAW.RAW_AIRLINE_DATA FROM @STAGE_1_RAW.MY_INTERNAL_STAGE FILE_...]
+[2026-03-12T23:41:16.606+0000] {cursor.py:1045} INFO - query execution done
+[2026-03-12T23:41:16.615+0000] {connection.py:734} INFO - closed
+[2026-03-12T23:41:16.661+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2026-03-12T23:41:16.725+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/snowflake/hooks/snowflake.py", line 390, in run
+    self._run_command(cur, sql_statement, parameters)  # type: ignore[attr-defined]
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 462, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 1136, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 100080 (22000): 01c2fd0d-0106-4e11-0000-0004af66f989: Number of columns in file (18) does not match that of the corresponding table (17), use file format option error_on_column_count_mismatch=false to ignore this error
+  File 'Airline_Dataset.csv.gz', line 3, character 1
+  Row 1 starts at line 2, column "RAW_AIRLINE_DATA"[18]
+  If you would like to continue loading when an error is encountered, use other values such as 'SKIP_FILE' or 'CONTINUE' for the ON_ERROR option. For more information on loading options, please run 'info loading_data' in a SQL client.
+[2026-03-12T23:41:16.735+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=1_load_csv_to_snowflake, task_id=copy_to_table, execution_date=20260312T234103, start_date=20260312T234114, end_date=20260312T234116
+[2026-03-12T23:41:16.749+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 4 for task copy_to_table (100080 (22000): 01c2fd0d-0106-4e11-0000-0004af66f989: Number of columns in file (18) does not match that of the corresponding table (17), use file format option error_on_column_count_mismatch=false to ignore this error
+  File 'Airline_Dataset.csv.gz', line 3, character 1
+  Row 1 starts at line 2, column "RAW_AIRLINE_DATA"[18]
+  If you would like to continue loading when an error is encountered, use other values such as 'SKIP_FILE' or 'CONTINUE' for the ON_ERROR option. For more information on loading options, please run 'info loading_data' in a SQL client.; 1055)
+[2026-03-12T23:41:16.778+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-12T23:41:16.797+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 .env
 check_data.py
+logs/
 
 Airline_Dataset.csv
 Clean_Airline_Dataset.csv

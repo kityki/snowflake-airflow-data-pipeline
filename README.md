@@ -34,7 +34,7 @@ The architecture strictly follows the ELT paradigm, separating orchestration fro
 
 _(Below is a snapshot of the Snowflake dashboard built on top of the Fact and Dimension tables)_
 
-![Snowflake Dashboard](https://github.com/kityki/snowflake-airflow-data-pipeline/blob/main/images/snowflake_dashboard.png?raw=true)
+![Snowflake Dashboard](https://github.com/kityki/snowflake-airflow-data-pipeline/blob/dev/images/snowflake_visualization.png)
 
 ## 🔐 Security & Best Practices Implemented
 

@@ -54,7 +54,8 @@ with DAG(
     load_stage_3 = SnowflakeOperator(
         task_id='load_stage_3',
         snowflake_conn_id='snowflake_conn',
-        sql="CALL AIRLINE_DWH.STAGE_3_CORE.LOAD_STAGE_3();"
+        sql="CALL AIRLINE_DWH.STAGE_3_CORE.LOAD_STAGE_3();",
+        autocommit=True
     )
 
     upload_to_stage >> copy_to_table >> load_stage_2 >> load_stage_3

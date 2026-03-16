@@ -1055,3 +1055,87 @@
 [2026-03-16T08:39:58.598+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:39:58.597+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2026-03-16T08:39:58.613+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:39:58.613+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
 [2026-03-16T08:39:58.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.077 seconds
+[2026-03-16T08:40:28.845+0000] {processor.py:161} INFO - Started process (PID=51895) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:40:28.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:40:28.849+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:40:28.849+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:40:28.858+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:40:28.880+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:40:28.880+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:40:28.894+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:40:28.894+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:40:28.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.075 seconds
+[2026-03-16T08:40:59.049+0000] {processor.py:161} INFO - Started process (PID=51950) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:40:59.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:40:59.053+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:40:59.053+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:40:59.062+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:40:59.085+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:40:59.084+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:40:59.098+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:40:59.098+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:40:59.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.071 seconds
+[2026-03-16T08:41:29.318+0000] {processor.py:161} INFO - Started process (PID=52005) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:41:29.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:41:29.322+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:41:29.322+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:41:29.331+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:41:29.357+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:41:29.356+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:41:29.373+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:41:29.372+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:41:29.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.088 seconds
+[2026-03-16T08:42:00.346+0000] {processor.py:161} INFO - Started process (PID=52060) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:42:00.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:42:00.352+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:42:00.351+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:42:00.362+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:42:00.388+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:42:00.388+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:42:00.410+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:42:00.409+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:42:00.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.091 seconds
+[2026-03-16T08:42:31.088+0000] {processor.py:161} INFO - Started process (PID=52115) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:42:31.089+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:42:31.093+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:42:31.092+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:42:31.104+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:42:31.128+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:42:31.128+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:42:31.143+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:42:31.143+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:42:31.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.081 seconds
+[2026-03-16T08:43:01.451+0000] {processor.py:161} INFO - Started process (PID=52170) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:43:01.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:43:01.455+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:43:01.455+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:43:01.464+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:43:01.487+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:43:01.486+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:43:01.504+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:43:01.504+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:43:01.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.078 seconds
+[2026-03-16T08:43:31.756+0000] {processor.py:161} INFO - Started process (PID=52225) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:43:31.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:43:31.759+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:43:31.759+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:43:31.768+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:43:31.788+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:43:31.788+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:43:31.803+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:43:31.802+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:43:31.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.069 seconds
+[2026-03-16T08:44:01.965+0000] {processor.py:161} INFO - Started process (PID=52280) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:44:01.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:44:01.968+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:44:01.968+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:44:01.977+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:44:02.003+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:44:02.003+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:44:02.016+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:44:02.016+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:44:02.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.074 seconds
+[2026-03-16T08:44:32.484+0000] {processor.py:161} INFO - Started process (PID=52335) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:44:32.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:44:32.488+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:44:32.487+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:44:32.498+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:44:32.522+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:44:32.522+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:44:32.537+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:44:32.537+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:44:32.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.081 seconds
+[2026-03-16T08:45:02.677+0000] {processor.py:161} INFO - Started process (PID=52390) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:45:02.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:45:02.680+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:45:02.680+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:45:02.693+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:45:02.724+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:45:02.724+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:45:02.747+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:45:02.746+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:45:02.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.095 seconds
+[2026-03-16T08:45:33.040+0000] {processor.py:161} INFO - Started process (PID=52445) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:45:33.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:45:33.045+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:45:33.044+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:45:33.056+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:45:33.078+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:45:33.078+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:45:33.092+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:45:33.092+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:45:33.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.078 seconds
+[2026-03-16T08:46:03.220+0000] {processor.py:161} INFO - Started process (PID=52500) to work on /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:46:03.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/1_load_csv_to_snowflake.py for tasks to queue
+[2026-03-16T08:46:03.223+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:46:03.223+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:46:03.232+0000] {processor.py:840} INFO - DAG(s) '1_load_csv_to_snowflake' retrieved from /opt/airflow/dags/1_load_csv_to_snowflake.py
+[2026-03-16T08:46:03.257+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:46:03.257+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2026-03-16T08:46:03.270+0000] {logging_mixin.py:188} INFO - [2026-03-16T08:46:03.270+0000] {dag.py:3834} INFO - Setting next_dagrun for 1_load_csv_to_snowflake to None, run_after=None
+[2026-03-16T08:46:03.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/1_load_csv_to_snowflake.py took 0.071 seconds
